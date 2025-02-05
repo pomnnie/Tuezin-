@@ -1,0 +1,14 @@
+// Função para verificar a resposta
+function checkAnswer() {
+  const answer = document.getElementById('answer').value.toLowerCase();
+  const responseElement = document.getElementById('response');
+
+  if (answer === 'matue') {
+    responseElement.textContent = 'Certo! É o Tuezinho do 085, não tem como!';
+    responseElement.style.color = 'green';
+  } else {
+    responseElement.textContent = 'Erradissimo';
+    responseElement.style.color = 'red';
+  }
+}
+}
